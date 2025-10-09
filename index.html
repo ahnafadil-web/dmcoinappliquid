@@ -5,20 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>DM COIN - DMCOIN Rewards Platform</title>
   
-  <!-- PWA Meta Tags for Native App Feel -->
   <meta name="theme-color" content="#667eea">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="description" content="Earn real money by completing tasks, referring friends, and claiming daily rewards. Native Android app experience on web.">
   
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23667eea'/><text x='50' y='65' font-size='40' font-weight='bold' text-anchor='middle' fill='white'>DM</text></svg>">
   
-  <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+  <script type='text/javascript' src='//pl27814121.effectivegatecpm.com/e6/1c/46/e61c46349d226c72afe320ebe64f68df.js'></script>
   
   <style>
     :root {
@@ -695,7 +694,6 @@
 </head>
 
 <body>
-  <!-- Full Screen Login -->
   <div id="auth-container" class="auth-container">
     <div class="app-logo">
       <div class="logo-icon">DM</div>
@@ -728,14 +726,12 @@
       <div id="auth-message" class="form-message"></div>
       
 
-      <!-- Show Debug Button -->
       <div style="text-align: center; margin-top: 12px;">
         <button id="show-debug-btn" onclick="showDebugPanel()" style="padding: 4px 8px; font-size: 10px; background: transparent; color: #999; border: 1px solid #ddd; border-radius: 4px; cursor: pointer;">Show Debug Info</button>
       </div>
     </div>
   </div>
 
-  <!-- Main App -->
   <div id="main-app" class="main-app">
     <header class="app-header">
       <div class="header-left">
@@ -746,8 +742,20 @@
     </header>
     
     <div class="content-container" id="content-area">
-      <!-- Home Tab -->
       <div id="home-content" class="tab-content">
+        <div style="text-align: center; margin-bottom: 16px;">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'f1f6832c45c7c5db5a21b9e227e36df1',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/f1f6832c45c7c5db5a21b9e227e36df1/invoke.js"></script>
+        </div>
+      
         <div class="stats-grid">
           <div class="stat-card-enhanced" onclick="animateCoinBalance()">
             <div class="stat-value"><span id="coin-balance">0</span></div>
@@ -771,7 +779,6 @@
           <div id="daily-msg" class="small" style="margin-top: 12px; text-align: center;"></div>
         </div>
 
-        <!-- Spin & Win Section -->
         <div class="card" id="spin-container">
           <h3 style="margin: 0 0 16px 0; display: flex; align-items: center; justify-content: space-between;">
             <span style="display: flex; align-items: center; gap: 8px;">
@@ -811,9 +818,6 @@
               color: white;
               text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             ">
-              <!-- Reward Values on Wheel - Properly Centered -->
-              
-              <!-- Top Center (0 degrees) - 10 coins -->
               <div style="
                 position: absolute;
                 top: 15px;
@@ -826,7 +830,6 @@
                 z-index: 2;
               ">10</div>
               
-              <!-- Top Right (45 degrees) - 25 coins -->
               <div style="
                 position: absolute;
                 top: 35px;
@@ -838,7 +841,6 @@
                 z-index: 2;
               ">25</div>
               
-              <!-- Right Center (90 degrees) - 5 coins -->
               <div style="
                 position: absolute;
                 top: 50%;
@@ -851,7 +853,6 @@
                 z-index: 2;
               ">5</div>
               
-              <!-- Bottom Right (135 degrees) - 20 coins -->
               <div style="
                 position: absolute;
                 bottom: 35px;
@@ -863,7 +864,6 @@
                 z-index: 2;
               ">20</div>
               
-              <!-- Bottom Center (180 degrees) - 0 coins -->
               <div style="
                 position: absolute;
                 bottom: 15px;
@@ -876,7 +876,6 @@
                 z-index: 2;
               ">0</div>
               
-              <!-- Bottom Left (225 degrees) - 50 coins -->
               <div style="
                 position: absolute;
                 bottom: 35px;
@@ -888,7 +887,6 @@
                 z-index: 2;
               ">50</div>
               
-              <!-- Left Center (270 degrees) - 15 coins -->
               <div style="
                 position: absolute;
                 top: 50%;
@@ -901,7 +899,6 @@
                 z-index: 2;
               ">15</div>
               
-              <!-- Top Left (315 degrees) - 0 coins -->
               <div style="
                 position: absolute;
                 top: 35px;
@@ -913,7 +910,6 @@
                 z-index: 2;
               ">0</div>
               
-              <!-- Center Icon -->
               <div style="
                 background: rgba(0,0,0,0.7);
                 border-radius: 50%;
@@ -926,9 +922,7 @@
               ">🎰</div>
             </div>
             
-            <!-- Wheel Pointer with Number Display -->
             <div style="position: relative; display: flex; justify-content: center; margin-bottom: 20px;">
-              <!-- Triangle Arrow -->
               <div style="
                 width: 0;
                 height: 0;
@@ -939,7 +933,6 @@
                 z-index: 10;
                 filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
               ">
-                <!-- Number inside triangle -->
                 <div id="spinner-result" style="
                   position: absolute;
                   top: 12px;
@@ -989,7 +982,6 @@
           </div>
         </div>
 
-        <!-- Feature Highlights -->
         <div class="card" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
           <h3 style="margin: 0 0 16px 0; display: flex; align-items: center; gap: 8px;">
             ✨ Premium Features
@@ -1020,7 +1012,6 @@
         </div>
       </div>
 
-      <!-- Tasks Tab -->
       <div id="tasks-content" class="tab-content hidden">
         <div class="card">
           <h3 style="margin: 0 0 16px 0">🎯 Available Tasks</h3>
@@ -1031,7 +1022,6 @@
         </div>
       </div>
 
-      <!-- Rewards Tab -->
       <div id="rewards-content" class="tab-content hidden">
         <div class="card">
           <h3 style="margin: 0 0 16px 0">🏆 Rewards & Referrals</h3>
@@ -1055,7 +1045,6 @@
           </div>
         </div>
 
-        <!-- Withdrawal Section -->
         <div class="card">
           <h3 style="margin: 0 0 16px 0">💸 Request Withdrawal</h3>
           <div class="stats-grid">
@@ -1076,7 +1065,6 @@
         </div>
       </div>
 
-      <!-- Profile Tab -->
       <div id="profile-content" class="tab-content hidden">
         <div class="card">
           <div style="display: flex; align-items: center; gap: 16px;">
@@ -1132,7 +1120,6 @@
     </nav>
   </div>
 
-  <!-- Toast -->
   <div id="toast" class="toast"></div>
 
   <script>
